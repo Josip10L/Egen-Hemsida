@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!--Står för "Document Type" och talar om för webbläsaren vad det är för typ av sida den får-->
+<html lang="sv"> <!--Anger vilket språk i vilket en webbsidas innehåll är formulerat, svenska i det här fallet-->
+   <head> <!--Innehåller information om dokumentet, informationen som skrivs här är ej synlig på webbsidan-->
+      <meta charset="utf-8"> <!--Gör det möjligt så att man kan skriva med det flesta symboler-->
+      <link href="Uppgift 8.css" rel="stylesheet"> <!--Länkar css filen till min html fil så att man kan designa den där-->
+      <title>Egen hemsida</title> <!--Den här titeln kommer att visas i länken på sidan-->
+   </head>
+   <body> <!--Det här är "kroppen" där man skriver allt som ska finnas på sidan-->
+      <header> <!--Det här är sidans översta del alltså sidhuvud-->
+         <h1 class="titel">Josips Hemsida</h1> <!--Titeln som kommer att visas på sidan och innehåller en klasselektor-->
+      </header>
+      <nav role="nav"> <!--Elementet används för att skapa länkar till andra delar av webbsidan eller länkar inom samma dokument-->
+         <ul> <!--Taggen definierar en oordnad lista-->
+            <li> <!--taggen beskriver en punkt i listan-->
+               <a class="självbiografi" href="Självbiografi.html"> <!--Användsför att definiera en hyperlänk-->
+               Självbiografi
+               </a>
+            </li>
+            <li>
+               <a class="tabeller" href="Tabeller.html">
+               Tabeller
+               </a>
+            <li>
+               <a class="bilder" href="Bilder.html">
+               Bilder
+               </a>
+            </li>
+         </ul>
+      </nav>
+      <main> <!--Taggen anger huvudinnehålet i ett dokument-->
+         <p class="Hem"> <!--Taggen definierar ett stycke-->
+            Tjena! Det här är min hemsida som handlar om mig själv och mycket annat
+         </p>
+      </main>
+      <div class="footer"> <!--Taggen definierar en uppdelning eller ett avsnitt i ett HTML dokument-->
+         <footer> <!--Taggen definierar en sidfot för ett dokument eller avsnitt-->
+            <p>Josip Lipovac TE19A</p>
+         </footer>
+      </div>
+   </body>
+</html>
