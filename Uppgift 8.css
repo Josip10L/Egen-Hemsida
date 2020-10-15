@@ -1,0 +1,159 @@
+body {
+	background-color: #6bff9c; /*Ändar bakgrundsfärgen*/
+	display: grid; /*Skapar en grid layout*/
+	grid-template-columns: 1fr 1fr 1fr; /*Skapar 3 lika stora kolumner*/
+	grid-template-rows: 100px 50px auto 100px 100px; /*Skapar 5 rader med olika storlekar*/
+	grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; /*Skapar olika delar i sidan*/
+	grid-gap: 10px; /*Skapar ett utrymme mellan varje grid på 10 pixlar*/
+}
+
+header {
+	grid-area: header; /*Gör så att header hamnar i gridarean header*/
+}
+
+header>h1 {
+	text-shadow: 2px 1px #39dbc8; /*Skapar en skugga bakom texten*/
+	text-align: center; /*Centrerar texten*/
+}
+
+nav a {
+	text-decoration: none; /*Gör så att strecket försvinner under*/
+}
+
+nav {
+	grid-area: nav;
+	display: grid;
+}
+
+nav ul {
+	font-size: 2.2em; /*Ändrar textstorleken*/
+	border: 4px outset #6be6ff; /*Skapar en kant som vinklar utåt*/
+	grid-template-columns: 1fr 1fr 1fr;
+	display: grid;
+	background-color: #6dff6b;
+	margin: 0; /*Används för att ta bort marginalet runt element utanför alla definierade gränse */
+	padding: 0; /*Gör så att bordern blir närmare texten*/
+}
+
+nav li {
+	list-style-type: none; /*Tar bort punkterna*/
+	text-align: center;
+}
+
+main {
+	grid-area: main;
+	display: grid;
+}
+
+.Hem {
+	grid-column-start: 2; /*Gör så att denna delen börjar i kolumn 2*/
+	font-size: 18pt;
+}
+
+.Biografi {
+	grid-column-start: 1;
+	font-size: 18pt;
+}
+
+footer {
+	grid-area: footer;
+}
+
+.sida1 {
+	text-align: center;
+	grid-area: header;
+	text-shadow: 2px 1px #6e34eb;
+}
+
+.sida2 {
+	text-align: center;
+	grid-area: header;
+	text-shadow: 2px 1px #6e34eb;
+}
+
+.sida3 {
+	text-align: center;
+	grid-area: header;
+	text-shadow: 2px 1px #6e34eb;
+}
+
+#background1 {
+	background-color: #d43f3f;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 100px 50px auto 100px 100px;
+	grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+}
+
+#options {
+	font-size: 2em;
+	border: 4px outset #c2c2c2; /*kant eller gräns*/
+	grid-template-columns: 1fr 1fr 1fr;
+	display: grid;
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(#40a19a, #4fc9c1, #40a19a); /*kombinerar ihop tre färger som typ blandas ihop med varandra*/
+}
+
+#background2 {
+	background-color: #bf7e4d;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 100px 50px auto 100px 100px;
+	grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+}
+
+#background3 {
+	background-color: #3d82ad;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 100px 50px auto 100px 100px;
+	grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+}
+
+table,th,td {
+	border: 1px solid black;
+	border-collapse: collapse; /*Gör så att kanterna slås ihop*/
+	grid-column-start: 3;
+}
+
+.lista {
+	grid-column-start: 1;
+	font-size: 25pt;
+}
+
+.footer {
+	position: fixed; /*Ställer in hur ett element placeras i ett dokument*/
+	left: 0; /*Anger den horisontella positionen för ett placerat element*/
+	bottom: 0; /*Anger den vertikala positionen för ett placerat element*/
+	width: 100%;
+	background-color: #ab9761;
+	color: white; /*Ändrar färgen*/
+	text-align: center;
+}
+
+th {
+	background-color: #ab6c6c;
+	font-size: 20pt;
+}
+
+tr:nth-child(2) {
+	background-color: #bfb04d; /*Gör så att färgen ändras i kolumn 2*/
+}
+
+tr:nth-child(3) {
+	background-color: #ab6c6c;
+}
+
+tr:nth-child(4) {
+	background-color: #bfb04d;
+}
+
+tbody:hover td[rowspan],
+tr:hover td {
+	background-image: linear-gradient(to right, red, white, blue); /*Gör så att färgen ändras när muspekaren är över tabellen*/
+}
+
+a:hover {
+	background-color: CornflowerBlue; /*Gör så att färgen ändras när muspekaren är över menyn*/
+}
